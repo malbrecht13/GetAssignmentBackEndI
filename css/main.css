@@ -1,13 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F2E4F6;
+}
+
 main {
+    display: flex;
+    justify-content: center;
+    background: inherit;
+}
+
+#central-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    border: 1px solid black;
+    height: 30vh;
+    width: 50vw;
+    padding: 0;
+    border: 3px solid gray;
+    margin-top: 10%;
+    background: #fff;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
 }
 
 .float-right {
-    float: right;
-    margin: 20px;
+    text-align: right;
+    margin: 50px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 2;
 }
