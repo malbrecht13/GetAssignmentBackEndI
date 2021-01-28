@@ -6,7 +6,7 @@
         } else {
             echo 'I am old enough to vote in the United States.';
         }
-        echo "<br>That means I am at least ".$days." years old.";
+        echo "<br>That means I am at least ".$days_f." days old.";
     } else {
         if(empty($firstname)) {
             echo "No first name was provided.<br>";
@@ -15,11 +15,8 @@
             echo "No last name was provided.<br>";
         }
         if(empty($age)) {
-            echo "No age was provided";
+            echo "No age was provided.";
         }
     }
-    
-
-    
 ?>
 
