@@ -18,18 +18,13 @@
 <body>
     <h1>
         <?php
-            echo "Hello, my name is ".htmlspecialchars($firstname)." ".htmlspecialchars($lastname).".<br>";
+            include('./view/header.php');
+            
         ?>
     </h1>
     <p>
         <?php
-            echo "I am ".htmlspecialchars($age)." years old and ";
-            if($age < 18) {
-                echo 'I am not old enough to vote in the United States';
-            } else {
-                echo 'I am old enough to vote in the United States.';
-            }
-            echo "<br>That means I am at least ".$days." years old.";
+            include('./view/paragraph.php');
         ?>
     </p>
 </body>
